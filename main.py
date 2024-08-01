@@ -137,7 +137,7 @@ if __name__ == "__main__":
     a = 0.66 # particle radius, um
     D = 2.0*a # particle diameter, um
     eta = 1.0e-3 #Pa.s
-    Lx = 1.05*600.0*D # periodic length x direction (um) - NOTE: this implictly specifies the number of particles
+    Lx = 1.05*50.0*D # periodic length x direction (um) - NOTE: this implictly specifies the number of particles
     Ly = -1.0 #  periodic length y direction : negative numbers imply no periodicity
     Lz = -1.0 #  periodic length z direction : negative numbers imply no periodicity
     kbT = 0.004142 # (aJ ; atto-> e-18) where kb*T uses T = 25 C: this is our unit of energy
@@ -255,7 +255,6 @@ if __name__ == "__main__":
         plt.title(f'Scatter plot of particle positions at time = {i*dt} s')
         plt.pause(0.01)
         plt.show(block=False)
-        plt.savefig(f'./plots2/plot_{i:04d}.tiff', format='tiff')
 
         
         
